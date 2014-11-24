@@ -1,0 +1,16 @@
+.project
+prawenv/
+font/
+*.jpg
+test_bot.py
+profile_ascii.py
+.pydevproject
+__pycache__/
+ascii_image_poster.py
+*.gz
+evaluate_font.py
+grayscale.txt
+integration_test.py
+intensities.txt
+test_download.jpg.txt
+virtualenv.py

@@ -29,7 +29,7 @@ def convert(url, filename):
     im = im.resize(size, Image.ANTIALIAS)
     im = im.convert("L")
     
-    im.save('grayscale.jpg')
+    #im.save('grayscale.jpg')
     
     out_str = ""
     

@@ -14,3 +14,5 @@ integration_test.py
 intensities.txt
 test_download.jpg.txt
 virtualenv.py
+__init__.pyc
+*.pyc

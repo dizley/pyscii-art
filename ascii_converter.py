@@ -42,6 +42,6 @@ def convert(url, filename):
             out_str = out_str+possibles[random.randint(0, len(possibles) - 1)]
         out_str = out_str + "\n"
         
-    #os.remove('grayscale.jpg')
+    os.remove('grayscale.jpg')
     
     return out_str

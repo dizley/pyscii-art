@@ -44,4 +44,6 @@ def convert(url, filename):
         
     #os.remove('grayscale.jpg')
     
+    os.remove(FILE_PATH)
+    
     return out_str

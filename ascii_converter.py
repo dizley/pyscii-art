@@ -6,7 +6,7 @@ from bisect import bisect
 from greyscale import scale, bounds
 from download_image import download
 
-def convert(url):
+def convert(url, N = 100000):
     
     filename, headers = download(url)
     
@@ -21,7 +21,7 @@ def convert(url):
     #b = 5.0*(old_y/old_x)
     #c = (-40000.0*old_y) / old_x
     #new_y = (-b + math.sqrt(pow(b, 2) - 4.0*a*c)) / (2.0*a)
-    N = 10000;
+    #N = 100000;
     new_y = math.sqrt((old_y*N)/old_x)
     new_x = (new_y * old_x) / old_y
     

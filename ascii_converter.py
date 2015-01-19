@@ -17,10 +17,12 @@ def convert(url):
     old_x = 1.2*im.size[0]
     old_y = im.size[1]
     
-    a = 1.0
-    b = 5.0*(old_y/old_x)
-    c = (-40000.0*old_y) / old_x
-    new_y = (-b + math.sqrt(pow(b, 2) - 4.0*a*c)) / (2.0*a)
+    #a = 1.0
+    #b = 5.0*(old_y/old_x)
+    #c = (-40000.0*old_y) / old_x
+    #new_y = (-b + math.sqrt(pow(b, 2) - 4.0*a*c)) / (2.0*a)
+    N = 10000;
+    new_y = math.sqrt((old_y*N)/old_x)
     new_x = (new_y * old_x) / old_y
     
     size = math.floor(new_x), math.floor(new_y)

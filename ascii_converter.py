@@ -6,9 +6,9 @@ from bisect import bisect
 from greyscale import scale, bounds
 from download_image import download
 
-def convert(url, filename):
+def convert(url):#, filename):
     
-    download(url, filename)
+    filename, headers = download(url)#, filename)
     
     BASE_PATH = os.path.dirname(os.path.abspath(__file__))
     FILE_PATH = os.path.join(BASE_PATH, filename)

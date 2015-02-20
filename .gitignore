@@ -16,3 +16,4 @@ test_download.jpg.txt
 virtualenv.py
 __init__.pyc
 *.pyc
+*.pyproj

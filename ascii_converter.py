@@ -6,15 +6,16 @@ from bisect import bisect
 from greyscale import scale, bounds
 from download_image import download
 
-def convert(url, N = 100000):
+def convert(filename, N = 100000):
     
-    filename, headers = download(url)
+    #filename, headers = download(url)
     
-    BASE_PATH = os.path.dirname(os.path.abspath(__file__))
-    FILE_PATH = os.path.join(BASE_PATH, filename)
+    #BASE_PATH = os.path.dirname(os.path.abspath(__file__))
+    #FILE_PATH = os.path.join(BASE_PATH, filename)
     im = Image.open(FILE_PATH)
     
-    old_x = 1.2*im.size[0]
+    x_scaling = 1.2
+    old_x = x_scaling*im.size[0]
     old_y = im.size[1]
     
     #a = 1.0
@@ -40,6 +41,6 @@ def convert(url, N = 100000):
             out_str = out_str+possibles[random.randint(0, len(possibles) - 1)]
         out_str = out_str + "\n"
     
-    os.remove(FILE_PATH)
+    #os.remove(FILE_PATH)
     
     return out_str

@@ -4,9 +4,9 @@ import random
 import math
 from bisect import bisect
 from greyscale import scale, bounds
-from download_image import download
+#from download_image import download
 
-def convert(filename, N = 100000):
+def convert(filename, N = 100000, write=False):
     
     #filename, headers = download(url)
     
@@ -42,5 +42,9 @@ def convert(filename, N = 100000):
         out_str = out_str + "\n"
     
     #os.remove(FILE_PATH)
+
+    if write:
+        with open(filename + ".txt", 'w') as f:
+            f.write(out_str)
     
     return out_str

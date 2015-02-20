@@ -12,7 +12,7 @@ def convert(filename, N = 100000):
     
     #BASE_PATH = os.path.dirname(os.path.abspath(__file__))
     #FILE_PATH = os.path.join(BASE_PATH, filename)
-    im = Image.open(FILE_PATH)
+    im = Image.open(filename)
     
     x_scaling = 1.2
     old_x = x_scaling*im.size[0]
